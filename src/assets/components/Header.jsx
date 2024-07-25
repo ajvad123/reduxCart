@@ -22,15 +22,15 @@ function Header() {
     <>
 
       <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
+        <Container >
           <Navbar.Brand>
             <Link to={'/'} className='text-decoration-none text-dark'>
               <i className="fa-solid fa-cart-shopping " style={{ color: '#000000' }}> Redux Cart</i>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+          <Navbar.Collapse id="basic-navbar-nav ">
+            <Nav style={{marginLeft:'600px'}}>
               <Nav.Link className='btn  me-3'>
                 <input type="text" name="" className='outline' onChange={(e)=>{dispatch(searchProduct(e.target.value.toLowerCase()))}}  placeholder='Enter product keywords' id="" />
               </Nav.Link>
